@@ -2,13 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- libreria para los iconos -->
+    <link rel="shortcut icon" href="http://lineadecodigo.com/wp-content/uploads/2007/03/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icono usuario  -->
+  </head>
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <header id="main-header">
+      <a id="logo-header" href="#">
+        <span class="site-name">Top Secret</span>
+        <span class="site-desc">Cifrar & Descifrar mensajes</span>
+      </a>
+    </header>
+    <span style="font-size:30px; color:white;  cursor:pointer" onclick="openNav()">&#9776; Home</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+        <a href="https://es-la.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=es" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.google.com.mx" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://www.youtube.com/?gl=MX&hl=es-419" class="youtube"><i class="fa fa-youtube"></i></a>
     </div>
+
+    <div id="principal">
+
+    <section id="pag_one">
+        <h1>¡Bienvenid@s a mi web! </h1>
+         <h2>¡Elige lo que quieres hacer!</h2>
+        <div class="input-container">
+            <i class="fa fa-lock icon"></i>
+              <button class="btn" type="submit"  id="cifrado" onclick="location.href='Cifrar.html'">Cifrar</button>
+        </div>
+        <div class="input-container">
+              <i class="fa fa-unlock icon"></i>
+              <button type="submit" class="btn" id="descifrado" onclick="location.href=''">Descifrar</button>
+        </div>
+    </section>
+
+    </div>
+    <!-- <div id="root">
+      <h1>Hola mundo!</h1>
+    </div> -->
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

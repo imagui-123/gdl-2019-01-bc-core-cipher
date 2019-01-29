@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Encriptar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="cipher.js">  </script>
+
+    <header id="main-header">
+      <a id="logo-header" href="#">
+        <span class="site-name">Top Secret</span>
+        <span class="site-desc">Cifrar & Descifrar mensajes</span>
+      </a>
+    </header>
+
+    <section id="pag_cifrar">
+        <div class="input-container">
+              <h3>Escribe tu mensaje:</h3>
+              <input class="input-field" type="text" placeholder="¡Texto!" id="msj">
+            <div class="pin">
+              <h3>PIN</h3><br>
+              <input class="input-field"type="num" id="num">
+            </div>
+
+        </div>
+        <div class="input-container">
+              <button type="submit" class="btn" id="cifrar" onclick="encode()">Aceptar</button>
+        </div>
+    </section>
+  </body>
+
+</html>
