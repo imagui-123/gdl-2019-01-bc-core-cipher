@@ -32,16 +32,17 @@ const encode=()=>{
       } else if(txt.charCodeAt(i)>=97 && txt.charCodeAt(i)<=122){
           letter[i]=((letter[i]-97)%26) + 97;
           result +=String.fromCharCode(letter[i]);
+      }else if (txt.charCodeAt(i)==32) {
+              letter[i]=txt.charCodeAt(i);
+              result += String.fromCharCode(letter[i]);
       }
 
           // document.write(result);
-         alert(result);
-         console.log(result);
+         // alert(result);
+         // console.log(result);
+         document.getElementById("resultado").innerHTML=result;
+
          // document.write(result);
           // return code;
     }
-
-        // alert("final");
-        //  document.write(String.fromCharCode.apply(null,code));
-        // document.write("Tu gancia neta $" + code);
-}
+  }
