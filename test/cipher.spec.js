@@ -45,15 +45,15 @@ describe('cipher', () => {
     //
     // Hacker edition
     //
-    // Si decides agregar soporte para minúsculas descomenta el test a
-    // continuación.
-    //
-    // it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
-    //   assert.equal(
-    //     cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg'),
-    //     'abcdefghijklmnopqrstuvwxyz'
-    //   );
-    // });
+    Si decides agregar soporte para minúsculas descomenta el test a
+    continuación.
+
+    it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
+      assert.equal(
+        cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg'),
+        'abcdefghijklmnopqrstuvwxyz'
+      );
+    });
 
     //
     // Hacker edition
