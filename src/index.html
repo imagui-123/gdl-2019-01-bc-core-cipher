@@ -5,34 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-
     <!-- libreria para los iconos -->
     <link rel="shortcut icon" href="http://lineadecodigo.com/wp-content/uploads/2007/03/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icono usuario  -->
   </head>
-  </head>
+  
   <body>
+
     <header id="main-header">
       <a id="logo-header" href="#">
         <span class="site-name">Top Secret</span>
         <span class="site-desc">Cifrar & Descifrar mensajes</span>
       </a>
     </header>
-    <span style="font-size:30px; color:#000000;  cursor:pointer" onclick="openNav()">&#9776; Home</span>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="about.html">About</a>
-        <a href="#">Contact</a>
-        <a href="https://es-la.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/?lang=es" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.google.com.mx" class="google"><i class="fa fa-google"></i></a>
-        <a href="https://www.youtube.com/?gl=MX&hl=es-419" class="youtube"><i class="fa fa-youtube"></i></a>
-    </div>
 
-    <div id="principal">
 
-    <section id="pag_one">
         <h1>¡Bienvenid@s a mi web! </h1>
+    <section id="pag_one">
         <div class="input-container" >
               <h3>Escribe tu mensaje:</h3>
               <input class="input-field" type="text" placeholder="¡Texto!" id="msj">
@@ -41,10 +30,10 @@
               <input class="input-field" type="num" placeholder="1-100" id="num">
             </div>
         </div>
-        <div class="limpiar">
-              <button type="submit" class="btn" id="clean">Nuevo</button>
-        </div>
-
+    </section>
+    <div class="limpiar">
+          <button type="submit" class="btn" id="clean">Nuevo</button>
+    </div>
 
          <h2>¡Elige lo que quieres hacer!</h2>
         <div class="button-container">
@@ -55,7 +44,7 @@
               <i class="fa fa-unlock icon"></i>
               <button type="submit" class="btn_cc" id="descifrado">Descifrar</button>
         </div>
-    </section>
+
 
 
       <div id="resultado" class="show">
@@ -64,7 +53,7 @@
 
 
 
-    </div>
+
 
     <!-- <div id="root">
       <h1>Hola mundo!</h1>
