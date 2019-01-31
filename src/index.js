@@ -13,7 +13,7 @@ document.getElementById("descifrado").addEventListener("click",decode);
 
 function decode(){
 let string=document.getElementById('msj').value;
-let num=parseInt(document.getElementById('num').value)*-1;
+let num=parseInt(document.getElementById('num').value);
 let msgDescifrar=window.cipher.decode(num,string);//Mandamos llamar nuestro metodo cipher
 document.getElementById('resultado').innerHTML=msgDescifrar; //Para visualizar el resultado en la pantalla
 }
