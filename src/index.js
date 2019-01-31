@@ -7,12 +7,29 @@ const closeNav=()=> {
   document.getElementById("mySidenav").style.width = "0";
 };
 
+
+document.getElementById("cifrado").addEventListener("click",encode);
+
 function encode(){
-  console.log("hola");
 let string=document.getElementById('msj').value;
 let num=parseInt(document.getElementById('num').value);
-let Cifrar=window.cipher.encode(num,string);//Mandamos llamar nuestro metodo cipher
-document.getElementById('resultado').innerHTML=Cifrar; //Para visualizar el resultado en la pantalla
-}
+let msgCifrar=window.cipher.encode(num,string);//Mandamos llamar nuestro metodo cipher
+document.getElementById('resultado').innerHTML=msgCifrar; //Para visualizar el resultado en la pantalla
+};
 
-document.getElementById('cifrar').addEventListener("click",encode);//mandamos llamar la funcion encode
+
+document.getElementById("descifrado").addEventListener("click",decode);
+
+function decode(){
+  console.log("decodi");
+let string=document.getElementById('msj').value;
+let num=parseInt(document.getElementById('num').value)*-1;
+let msgDescifrar=window.cipher.decode(num,string);//Mandamos llamar nuestro metodo cipher
+document.getElementById('resultado').innerHTML=msgDescifrar; //Para visualizar el resultado en la pantalla
+};
+
+function limpiar(){
+ document.getElementById('msj').value="";
+ document.getElementById('num').value="";
+};
+document.getElementById("clean").addEventListener("click",limpiar);
