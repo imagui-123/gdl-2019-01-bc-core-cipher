@@ -45,12 +45,27 @@ let result="";
                 letter[i]=(((letter[i]+(offset*-1))+65) %26) + 65;
                 result +=String.fromCharCode(letter[i]);
 
-         } else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122) {
-                  letter[i]=((letter[i]+offset+97) %26 ) + 97;
-                  console.log(letter[i]);
-                  result +=String.fromCharCode(letter[i]);
+         } else if(string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
+            if(offset>26){
+              // offset=offset-26;
+              letter[i]=(((letter[i]+offset)+97) %26 ) + 97;
+              result +=String.fromCharCode(letter[i]);
+          }  else {
+            letter[i]=letter[i]- offset;
+              result +=String.fromCharCode(letter[i]);
+          }
 
-         }else if(string.charCodeAt(i)==32){
+
+
+          }
+
+         //}
+         // else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122) {
+         //          letter[i]=(((letter[i]+offset)+97) %26 ) + 97;
+         //          result +=String.fromCharCode(letter[i]);
+         //
+         //}
+         else if(string.charCodeAt(i)==32){
                   letter[i]=string.charCodeAt(i);
                   result += String.fromCharCode(letter[i]);
 
