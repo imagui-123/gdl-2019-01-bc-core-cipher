@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <!-- libreria para los iconos -->
     <link rel="shortcut icon" href="http://lineadecodigo.com/wp-content/uploads/2007/03/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icono usuario  -->
@@ -29,44 +30,41 @@
 
     <section id="pag_one">
         <div class="input-container" >
-              <h3>Escribe tu mensaje:</h3>
-              <input class="input-field" type="text" placeholder="¡Mensaje!" id="msj" required>
-            <!-- <div class="pin"> -->
-              <h3>Clave:</h3><br>
-              <input class="field" type="number" placeholder="1-99" id="num" autocomplete="off" required>
+           <form id="input">
+              <label for="msj">Escribe tu mensaje:</label>
+              <input  type="text" placeholder="¡Mensaje!" id="msj" autocomplete="off" required>
 
-            <!-- </div> -->
-        </div>
-        <div class="limpiar">
-              <button type="submit" class="btn" id="clean">Nuevo</button>
+              <label for="num">Clave:</label>
+              <input  type="number" placeholder="1-99" id="num" autocomplete="off" title="Solo numeros del 1 al 99 "  required>&emsp;&emsp;
+              <button class="button" type="submit"  id="clean">Borrar</button>
+            </form>
         </div>
     </section>
 
       <section id="botones">
           <h2>¡Elige lo que quieres hacer!</h2>
-          <div class="button-container">
-              <i class="fa fa-lock icon"></i>
-              <button class="btn_cc" type="submit"  id="cifrado" >Cifrar</button>
-          </div>
-          <div class="button-container">
-              <i class="fa fa-unlock icon"></i>
-              <button type="submit" class="btn_cc" id="descifrado">Descifrar</button>
-          </div>
+          <div >
+          <!-- <form class="b-container" > -->
+            <!-- <button type="button" id="cifrado">CIFRAR</button> -->
+              <button  type="submit"  id="cifrado" class="btn"><i class="fa fa-unlock icon"></i> Cifrar</button>&emsp;
+              <button type="submit"  id="descifrado" class="btn" ><i class="fa fa-unlock icon"></i>Descifrar</button>
+                <!-- <i class="fa fa-unlock icon"></i>  -->
+                <!-- <i class="fa fa-lock icon"></i> -->
 
+          </div>
+          <!-- </form> -->
       </section>
 
+      <section id="resultado">
 
-        <div id="resultado" class="show">
+        <div class="show">
 
-
+            <label for="resultaM">Resultado:</label>
+            <textarea  rows="4" cols="40" id="resultaM" readonly="readonly"></textarea>
+            <button type="submit" class="btn" id="copy">Copiar texto</button>
         </div>
 
-
-
-
-
-
-
+      </section>
 
     <!-- <div id="root">
       <h1>Hola mundo!</h1>
