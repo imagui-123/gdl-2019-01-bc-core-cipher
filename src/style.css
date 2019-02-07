@@ -9,15 +9,15 @@ background-attachment:fixed;
 /* Para dar formato al header */
 #main-header{
   background: rgb(0,0,0); /*fallback color*/
-  background: rgba(176, 196, 222, 0.5); /* Black background with 0.5 opacity */
-  height: 100px;
+  background: rgba(136, 134, 126, 0.5); /* Black background with 0.5 opacity */
+  height: 120px;
 }
 
 #logo-header {
 	float: left;
 	padding: 6px 0 0 20px;
 	text-decoration: none;
-  color: #2F4F4F;
+  color: #FF0000;
 }
 
 #logo-header:hover {
@@ -27,15 +27,15 @@ background-attachment:fixed;
 	#logo-header .site-name {
 		display: block;
 		font-weight: 700;
-		font-size: 40px;
+		font-size: 50px;
     font-family:'Sofia';
 	}
 
   #logo-header .site-desc {
 		display: block;
 		font-weight: 300;
-		font-size: 0.9em;
-		color: #DAA520;
+		font-size: 1em;
+		color: #800000;
     font-family:'Sofia';
 	}
 
@@ -67,7 +67,6 @@ background-attachment:fixed;
 
  }
 
-
   /* formato letras de bienvenida */
   h1 {
     color: #000000;
@@ -81,34 +80,21 @@ background-attachment:fixed;
     font-family: 'Sofia';
   }
 
-  h3 {
-    color: #000000;
-    font-size: 18px;
-    /* margin-top: auto; */
-    /* margin-top: 21px; */
-    /* margin-bottom: 60px; */
-    animation-name: example;
-    animation-duration: 1s;
-    /* padding-left: 5%; */
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-
   /* formato para letras que deseas hacer  */
   h2 {
-    color: #2F4F4F;
+    color: #800080;
     font-size: 25px;
     animation-name: example;
     animation-duration: 1s;
     padding-left: 38%;
     padding-top: 1em;
+    font-family: Georgia, serif;
 
   }
 
   .input-container {
      border-radius: 5px;
-    /* background-color: #f2f2f2; */ /* hace gris la parte de atras*/
+    /* background-color: #f2f2f2;  /* hace gris la parte de atras*/
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -118,7 +104,7 @@ background-attachment:fixed;
   }
 
   input[type=text] {
-   width: 30%;
+  width: 40%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -126,9 +112,8 @@ background-attachment:fixed;
   margin: 5px 10px 5px 0;
   padding: 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid  #ddd;
   vertical-align: middle;
-  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 input[type=number] {
@@ -140,49 +125,53 @@ resize: vertical;
 margin: 5px 10px 5px 0;
 background-color: #fff;
 vertical-align: middle;
+
 }
 
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
   margin: 5px 10px 5px 0;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Bookman, URW Bookman L', serif;
 }
 
+/* formato boton borrar */
 .button {
   padding: 10px 20px;
-  background-color: dodgerblue;
+  background-color: #800000;
   border: 1px solid #ddd;
   color: white;
   cursor: pointer;
   font-size: 16px;
-  text-align: center;
+  text-align: right;
   outline: none;
   border: none;
   border-radius: 12px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px #A0522D;
+  align-content: space-around;
 }
 
 .button:hover {
-  background-color: #3e8e41
+  background-color: #A52A2A;
 }
 
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  background-color: #800000;
+  box-shadow: 0 5px #A0522D;
   transform: translateY(4px);
 }
 
+/* ------------------------- botones cifrar-descifrar----------------------- */
 .b-container{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .btn {
-  background-color: DodgerBlue;
+  background-color: #000080;
   border: none;
   color: white;
   padding: 12px 20px;
@@ -190,28 +179,26 @@ label {
   cursor: pointer;
   font-size: 16px;
   border-radius: 12px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px #4169E1;
   outline: none;
 }
 
-  /* transform: translate(500%, 10%); */
-
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: #00BFFF;
 }
 
 .btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  background-color: #000080;
+  box-shadow: 0 5px #4169E1;
   transform: translateY(4px);
 }
 
+/* ---------------------------ocultar la pantalla de resultado----------- */
 #resultado{
   display: none;
 }
 
 .show{
-  /* display: -ms-flexbox; */
   color:black;
   width: 10%;
   padding-left: 30%;
@@ -225,23 +212,31 @@ textarea{
   font-size: 18px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   text-align: justify;
+  border: 1px solid #ccc;
+  border-radius: 12px;
 }
 
+/* ------------------ para cuando se usan las mayusculas-------------------- */
 #text{
   display: none;
   color: red
 }
+p1{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'American Typewriter', serif;
+}
 
-
+/* -------------------------------- formato para acerca de ------------------ */
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none; /* Esconde*/
+  position: fixed; /* permanecer en el lugar */
+  z-index: 1; /* diferencia para el top*/
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%; /* completo width */
+  height: 100%; /* completo height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -271,7 +266,7 @@ p{
   font-family: "Comic Sans MS", cursive, sans-serif;
   border-radius: 13px;
   text-align: justify;
-  padding-left: 25px;
+  padding-left: 20px;
   padding-right: 30px;
 
 }

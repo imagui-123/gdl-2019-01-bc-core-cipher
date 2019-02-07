@@ -1,9 +1,8 @@
 
 document.getElementById("cifrado").addEventListener("click",comprobar);
+document.getElementById("descifrado").addEventListener("click", comprobarD);// Mandamos llamar al boton
 let Mensaje=document.getElementById('resultado');
 
-
-// let pResultado=document.getElementById('pantalla_resultado');
 
 function encode(){
 let string=document.getElementById('msj').value;
@@ -15,10 +14,7 @@ document.getElementById('resultaM').innerHTML=msgCifrar; //Para visualizar el re
 }
 
 
-document.getElementById("descifrado").addEventListener("click", comprobarD);// Mandamos llamar al boton
-
 function decode(){
-  console.log("entra");
 let string=document.getElementById('msj').value;
 let num=document.getElementById('num').value;
 let msgDescifrar=window.cipher.decode(num,string);//Mandamos llamar nuestro metodo cipher
@@ -27,13 +23,15 @@ document.getElementById("input").reset();
 document.getElementById('resultaM').innerHTML=msgDescifrar; //Para visualizar el resultado en la pantalla
 }
 
+
+// ------------------------ para borrar datos en toda la pantalla -------------------------------
 document.getElementById("clean").addEventListener("click",limpiar);
 function limpiar(){
   location.reload(true);
   text.reset();
-  // document.getElementById("input").reset();
 }
 
+// ------------------------- para copiar el resultado de cifrado o descifrado -------------------
 document.getElementById('copy').addEventListener("click",copiar);
 function copiar(){
   let copyText=document.getElementById('resultaM');
@@ -41,6 +39,8 @@ function copiar(){
   document.execCommand("copy");
 }
 
+
+//  ----- comprobar que el usuario escribe algo y que esta dentro del rango especificado de numeros en cifrado ----
 function comprobar() {
 let string=document.getElementById('msj').value;
 let num=document.getElementById('num').value;
@@ -54,6 +54,7 @@ let num=document.getElementById('num').value;
   }
 }
 
+//  ----- comprobar que el usuario escribe algo y que esta dentro del rango especificado de numeros en descifrado ----
   function comprobarD() {
   let string=document.getElementById('msj').value;
   let num=parseInt(document.getElementById('num').value);
@@ -66,6 +67,8 @@ let num=document.getElementById('num').value;
     }
   }
 
+
+// --------------- verifica que el usuario utiliza las mayusculas -----------------------------
   let input=document.getElementById('msj');
   let text=document.getElementById('text');
   input.addEventListener("keyup",function(event){
@@ -76,17 +79,24 @@ let num=document.getElementById('num').value;
     }
   });
 
+
+// --------------------- abrir correo----------------------------------------
   document.getElementById('mail').addEventListener("click",correo);
   function correo() {
     window.location.href="mailto:address@outlook.com";
   }
 
+
+//  --------------------- para abrir el acerca de----------------------------
 document.getElementById('acerca').addEventListener("click",ab);
 
 function ab() {
   document.getElementById('id01').style.display='block';
 }
 
+
+
+//  ---------------- para cerrar la ventana de acerca de fuera de la pantalla-----
 
 let modal = document.getElementById('id01');
 
