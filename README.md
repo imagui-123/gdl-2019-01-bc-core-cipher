@@ -1,4 +1,34 @@
-# Cifrado César
+# Proyecto ceaser cipher
+En este primer proyecto dentro del bootcamp nos pidieron realizar una página que
+pudiera cifrar y descifrar un mensaje escrito en Mayúsculas utilizando un
+abecedario de 26 letras, y que el usuario hiciera un desplazamiento (offset) dentro
+del abecedario con el número que él quisiera.
+
+Yo decidí hacer esta página llamada TOP SECRET para apoyar a las parejas y amigos
+a ocultar mensajes que pudieran ser vistos por otras personas. Con esto solo las personas
+implicadas podran descifrar su mensaje por medio de una clave.
+Los usuarios podran enviar sus mensajes con la opción de correo electronico, o
+algún otro medio por el cual se les facilite.
+
+Las herramientas que utilice fueron HTML, CSS y JS en donde nos proporcionaron
+una formula en la que podiamos crear el cifrado y descifrado por medio del
+código ASCII.
+
+# PRINCIPALES USUARIOS DEL PRODUCTO.
+Mi programa va dirigido a los amigos, parejas enamoradas y para las no enamoradas también. Que desean enviar información cifrada, ya que esta se cifra mediante un algoritmo y solo se puede decodificar con la clave apropiada.
+
+#LOS OBJETIVOS DE ESTOS USUARIOS EN RELACION CON TU PRODUCTO
+Es un producto seguro, solo las personas interesadas pueden obtener el descifrado del mensaje, con la clave correcta.
+La función de conversación cifrada es una herramienta que añade una capa adicional de seguridad a las conversaciones que el usuario crea. Evita ser espiado por otras personas.
+
+#COMO CREES QUE EL PRODUCTO QUE ESTAS CREANDO ESTA RESOLVIENDO SUS PROBLEMAS.
+Imaginemos que necesitamos darle una sorpresa a nuestra pareja o amigo(s) y no queremos que alguien más lo descubra, este programa puede ayudarnos a que solo las personas implicadas sepan lo que el mensaje dice, ya que los mensajes solamente se podrán leer desde esta aplicación y con la clave única de cada usuario.
+Este sistema de seguridad, se utiliza para resguardar información importante que puede ser enviada de una forma en la que si alguien intercepta el mensaje no tendrá ningún sentido o significado a menos que conozca los parámetros necesarios para descifrarlo.
+Este es un programa con alto grado de confiabilidad y funcionalidad.
+
+
+
+<!-- # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
 es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
@@ -326,4 +356,4 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [ ] Permite usar un `offset` negativo. -->
