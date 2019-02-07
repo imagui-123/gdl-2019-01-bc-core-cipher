@@ -11,7 +11,6 @@ let num=parseInt(document.getElementById('num').value);
 let msgCifrar=window.cipher.encode(num,string);//Mandamos llamar nuestro metodo cipher
 Mensaje.style.display="flex";
 document.getElementById("input").reset();
-// console.log(msgCifrar);
 document.getElementById('resultaM').innerHTML=msgCifrar; //Para visualizar el resultado en la pantalla
 }
 
@@ -31,6 +30,7 @@ document.getElementById('resultaM').innerHTML=msgDescifrar; //Para visualizar el
 document.getElementById("clean").addEventListener("click",limpiar);
 function limpiar(){
   location.reload(true);
+  text.reset();
   // document.getElementById("input").reset();
 }
 
@@ -65,3 +65,36 @@ let num=document.getElementById('num').value;
       decode();
     }
   }
+
+  let input=document.getElementById('msj');
+  let text=document.getElementById('text');
+  input.addEventListener("keyup",function(event){
+    if(event.getModifierState("CapsLock")){
+      text.style.display="block";
+    }else{
+      text.style.display="none";
+    }
+  });
+
+  document.getElementById('mail').addEventListener("click",correo);
+  function correo() {
+    window.location.href="mailto:address@outlook.com";
+  }
+
+document.getElementById('acerca').addEventListener("click",ab);
+
+function ab() {
+  document.getElementById('id01').style.display='block';
+}
+
+
+let modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick=function(event) {
+
+    if (event.target == modal) {
+        modal.style.display = "none";
+
+    }
+};

@@ -1,8 +1,8 @@
 
 body{
-/* background-image:url(https://media.istockphoto.com/vectors/blank-lined-paper-template-one-page-notebook-exercise-book-vector-vector-id1032062532?s=170667a);
-background-size:cover;
-background-attachment:fixed; */
+background-image:url(https://www.restate.nz/wp-content/uploads/2017/11/Top-Secret-e1511818786819.jpg);
+background-size: cover;
+background-attachment:fixed;
 
 }
 
@@ -174,7 +174,7 @@ label {
 }
 
 .b-container{
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -225,4 +225,63 @@ textarea{
   font-size: 18px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   text-align: justify;
+}
+
+#text{
+  display: none;
+  color: red
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  border-radius: 12px;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.8s;
+  animation: animatezoom 0.6s
+}
+
+p{
+  color: black;
+  font-size: 35 px;
+  margin-top: auto;
+  background-color: beige;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border-radius: 13px;
+  text-align: justify;
+  padding-left: 25px;
+  padding-right: 30px;
+
+}
+.imgcontainer {
+  text-align: center;
+  margin: 14px 0 12px 0;
+  position: relative;
+}
+
+img.logo {
+  width: 20%;
+  border-radius: 30%;
 }
