@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .button, .b-container, .btn {
@@ -12,52 +8,60 @@
     width: 100%;
   }
 }
+
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  /* .menu, .main, .right*/
   .header-right, .input-container, .button, .b-container, .btn, .show, .imgcontainer, .modal-content {
     width: 100%;
   }
 }
 
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  body{
+  }
+}
 
 body{
-background-image:url(https://www.restate.nz/wp-content/uploads/2017/11/Top-Secret-e1511818786819.jpg);
-background-size: cover;
-background-attachment:fixed;
-
+  background-image:url("https://i.kinja-img.com/gawker-media/image/upload/s--2JfHiPa0--/c_scale,f_auto,fl_progressive,q_80,w_800/oi636cfe7vz12ny4evce.jpg");
+  background-size: cover;
+  background-attachment:fixed;
+  height: 100%;
+  margin: 0;
 }
 
 /* Para dar formato al header */
 #main-header{
   background: rgb(0,0,0); /*fallback color*/
   background: rgba(136, 134, 126, 0.5); /* Black background with 0.5 opacity */
-  height: 90px;
+  height: 100px;
+  margin: 0;
+  background-color: #FFFFF0;
 }
 
 #logo-header {
 	float: left;
 	padding: 6px 0 0 20px;
 	text-decoration: none;
-  color: #FF0000;
+  color: #191970;
 }
 
-#logo-header:hover {
+/* #logo-header:hover {
 		color: #0b76a6;
-}
+} */
 
 	#logo-header .site-name {
 		display: block;
 		font-weight: 700;
-		font-size: 4vw; /* viewport width= the text size will follow the size of the browser window*/
-    font-family:'Sofia';
+		font-size: 3.5vw; /* viewport width= the text size will follow the size of the browser window*/
+    font-family:'Bookman, URW Bookman L', serif;
 	}
 
   #logo-header .site-desc {
 		display: block;
 		font-weight: 300;
-		font-size: 1.5vw;
-		color: #800000;
+		font-size: 1vw;
+		color: #000080;
     font-family:'Sofia';
 	}
 
@@ -90,7 +94,7 @@ background-attachment:fixed;
  }
 
   /* formato letras de bienvenida */
-  h1 {
+  /* h1 {
     color: #000000;
     font-size: 5vw;
     margin-top: auto;
@@ -99,45 +103,50 @@ background-attachment:fixed;
     animation-duration: 1s;
     padding-left: 30%;
     font-family: 'Sofia';
-  }
+  } */
 
-  /* formato para letras que deseas hacer  */
+/*----------- formato para letras que deseas hacer----------------  */
   h2 {
-    color: white;
-    font-size: 3vw;
+    color: #FFD700;
+    font-size: 2vw;
     animation-name: example;
     animation-duration: 1s;
-    padding-left: 38%;
-    padding-top: 1em;
     font-family: Georgia, serif;
-
+    text-align: center;
+    font-weight: bolder;
   }
 
-  .input-container {
-     border-radius: 5px;
-    /* background-color: #f2f2f2;  /* hace gris la parte de atras*/
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    flex-direction: column;
-    align-items: center;
-  }
+  .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: #FFFF00;
+  font-weight: bolder;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5vw;
+}
 
   input[type=text] {
-  width: 40%;
+  width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   resize: vertical;
   margin: 5px 10px 5px 0;
-  padding: 10px;
   background-color: #fff;
   border: 1px solid  #ddd;
-  vertical-align: middle;
-}
+  color: black;
+  }
 
 input[type=number] {
-width: 10%;
+width: 15%;
 padding: 12px;
 border: 1px solid #ccc;
 border-radius: 8px;
@@ -145,49 +154,37 @@ resize: vertical;
 margin: 5px 10px 5px 0;
 background-color: #fff;
 vertical-align: middle;
+color: black;
 
 }
 
 label {
-  padding: 12px 12px 12px 0;
+  padding: 20px 20px 20px 0;
   display: inline-block;
   margin: 5px 10px 5px 0;
   font-size: 2.5vw;
   font-family: 'Bookman, URW Bookman L', serif;
 }
 
-/* formato boton borrar */
-.button {
-  padding: 10px 20px;
-  background-color: #800000;
-  border: 1px solid #ddd;
-  color: white;
-  cursor: pointer;
-  font-size: 1.8vw;
-  text-align: center;
-  outline: none;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 9px #A0522D;
-  align-content: space-around;
-}
-
-.button:hover {
-  background-color: #A52A2A;
-}
-
-.button:active {
-  background-color: #800000;
-  box-shadow: 0 5px #A0522D;
-  transform: translateY(4px);
-}
+ #text{
+   background-color: rgb(255,255,255); /* Fallback color */
+   background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+   width: 50%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+ }
 
 /* ------------------------- botones cifrar-descifrar----------------------- */
+
 .b-container{
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-left: 30px;
+  display: block;
+  flex-flow: row wrap;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .btn {
@@ -195,9 +192,8 @@ label {
   border: none;
   color: white;
   padding: 12px 20px;
-  font-size: 16px;
+  font-size: 1.5vw;
   cursor: pointer;
-  font-size: 1.8vw;
   border-radius: 12px;
   box-shadow: 0 9px #4169E1;
   outline: none;
@@ -214,26 +210,58 @@ label {
 }
 
 /* ---------------------------ocultar la pantalla de resultado----------- */
-#resultado{
+#pagResult{
   display: none;
 }
 
 .show{
-  color:black;
-  width: 10%;
-  padding-left: 30%;
-  justify-content:center;
-  font-size: 3vw;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
   text-align: justify;
+  color:black;
+  font-size: 2vw;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 textarea{
-  font-size: 3vw;
+  font-size: 1.5vw;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  text-align: justify;
   border: 1px solid #ccc;
   border-radius: 12px;
+  width: 50%;
+  /* width: 12em; */
+}
+
+/*---------------------- formato boton borrar y nuevo -----------------*/
+.button {
+  /* padding: 10px 20px; */
+  background-color: #800000;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8vw;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 9px #A0522D;
+  align-items: center;
+  /* align-content: space-between; */
+  /* margin: auto; */
+}
+
+.button:hover {
+  background-color: #A52A2A;
+}
+
+.button:active {
+  background-color: #800000;
+  box-shadow: 0 5px #A0522D;
+  transform: translateY(4px);
+}
+
+#botton_show{
+  margin-bottom: 2em;
 }
 
 /* ------------------ para cuando se usan las mayusculas-------------------- */
@@ -265,11 +293,12 @@ p1{
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: white;
+  /* background-color: white; */
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
   border-radius: 12px;
+  background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--2JfHiPa0--/c_scale,f_auto,fl_progressive,q_80,w_800/oi636cfe7vz12ny4evce.jpg");
 }
 
 /* Add Zoom Animation */
@@ -282,14 +311,14 @@ p{
   color: black;
   font-size: 1.5vw;
   margin-top: auto;
-  background-color: beige;
+  background-color: rgb(255,255,240, 0.8);
   font-family: "Comic Sans MS", cursive, sans-serif;
   border-radius: 13px;
   text-align: justify;
   padding-left: 20px;
   padding-right: 30px;
-
 }
+
 .imgcontainer {
   text-align: center;
   margin: 14px 0 12px 0;

@@ -8,7 +8,6 @@ window.cipher = {
 
     for(let i=0; i<string.length; i++){
            codigo=string.charCodeAt(i);
-          console.log(codigo);
           if(codigo>=97 && codigo<=122){
             result=(((codigo - 97 )+ offset) %26 ) + 97;
           } else if(codigo==32){
@@ -25,7 +24,7 @@ window.cipher = {
       return resultado;
   },
 
-  
+
   decode (offset,string){
 
   let letter=[];
@@ -35,7 +34,7 @@ window.cipher = {
     for(let i=0; i<string.length; i++){
 
             codigo=string.charCodeAt(i);
-            console.log(codigo);
+            
             if(codigo>=97 && codigo<=122){
               result=(((codigo - 122)+ ( - offset))%26) +122;
             }else if(codigo==32){
