@@ -24,6 +24,7 @@ function intro1(){
   cifra.style.display="none";
   pagWrite.style.display="none";
   who();
+
 }
 
 function who(){
@@ -31,15 +32,26 @@ function who(){
   let num=document.getElementById('num').value;
   if(string == "" || num==""){
       alert("Necesitas llenar los campos");
+      pagWrite.style.display="block";
+      pagButton.style.display="block";
+      cifra.style.display="block";
+      descifra.style.display="block";
+
   }
   else if (num <= 0 || num >= 100) {
       alert("El número debe ser entre 1 y 99");
+      pagWrite.style.display="block";
+      pagButton.style.display="block";
+      cifra.style.display="block";
+      descifra.style.display="block";
   }
-  if (cifra.style.display=='block') {
+   else if (cifra.style.display=='block') {
     encode();
   } else {
     decode();
   }
+  // pagWrite.style.display="block";
+  // pagButton.style.display="block";
 }
 
 //------------------------------------------cifrado-----------------------------------------
